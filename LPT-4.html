@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="//pages.lumentech.com/rs/926-HYV-740/images/favicon-32.png" />
+    <link rel="icon" href="//pages.lumentech.com/rs/926-HYV-740/images/favicon-32.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
+  	<link rel="stylesheet" type="text/css" href="//pages.lumentech.com/rs/926-HYV-740/images/calendar.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//pages.lumentech.com/rs/926-HYV-740/images/main_stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="//pages.lumentech.com/rs/926-HYV-740/images/event_two.css">
+  	<link rel="stylesheet" type="text/css" href="//pages.lumentech.com/rs/926-HYV-740/images/calendar.css">
+
+
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css" href="//pages.lumentech.com/rs/926-HYV-740/images/font_classes.css">
+
+    <!-- Marketo meta tags -->
+    <meta class="mktoString" id="pageTitle" mktoname="Page Title" default="Lumen Technologies" />
+    <meta class="mktoString" id="logoLink" mktoName="Logo Link" default="#" />
+  	<meta class="mktoBoolean" mktoName="Show Header without Content" id="headerWithoutContent" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Show Header with Right Content" id="headerWithContent" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="mobileHeroImg" mktoname="Mobile Banner Image 375x475" default="https://via.placeholder.com/375x375.png" />
+  	<meta class="mktoString" id="mobileHeroImgMinHeight" mktoName="Mobile Banner Image Minimum Height" default="375px" />
+    <meta class="mktoBoolean" id="showEventDetails" mktoName="Show Event Details" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show" />
+  	<meta class="mktoBoolean" mktoName="Show Add to Calendar Icon" id="addtcShow" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="launchLink" mktoname="Adobe Launch Link" default="//assets.adobedtm.com/c58e7dfcc1ae/f4f11ace7481/launch-ab5692cd5e33.min.js"/>
+    <meta class="mktoString" id="eventTitle" mktoname="Event Title" default=""/>
+    <meta class="mktoString" id="eventStart" mktoname="Event Start" default=""/>
+    <meta class="mktoString" id="eventEnd" mktoname="Event End" default=""/>
+    <meta class="mktoString" id="eventLocation" mktoname="Event Location" default=""/>
+    <meta class="mktoString" id="eventSummary" mktoname="Event Summary" default=""/>
+    <meta class="mktoString" id="twitterLink" mktoname="Twitter Link" default="https://www.twitter.com/lumentechco"/>
+    <meta class="mktoString" id="linkedInLink" mktoname="LinkedIn Link" default="https://www.linkedin.com/company/lumen-tech"/>
+    <meta class="mktoString" id="youtubeLink" mktoname="YouTube Link" default="https://www.youtube.com/lumentechnologies"/>
+    <meta class="mktoString" id="facebookLink" mktoname="Facebook Link" default="https://www.facebook.com/lumentechnologies"/>
+  <meta class="mktoString" id="optionalScriptBottom" mktoname="Optional Script Bottom" default=""/>
+    <!-- <meta class="mktoString" id="privacyPolicy" mktoname="Privacy Policy Link" default="#" /> -->
+    
+    <title>${pageTitle}</title>
+
+    <!-- Adobe Launch script -->
+    <script src="${launchLink}" async></script>
+  
+  	<!-- Calendar Library -->
+  	<script src="https://pages.lumentech.com/rs/926-HYV-740/images/calendarLibrary.js"></script>
+
+    <!-- script to add web font -->
+    <script type="text/javascript">
+    	const proxyurl = "//pages.lumentech.com/";
+			const url = "//pages.lumentech.com/"; // site that doesn’t send Access-Control-*
+			fetch(proxyurl + url) // //cors-anywhere.herokuapp.com///example.com
+			.then(response => response.text())
+			.then(contents => console.log(contents))
+			.catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
+    </script>
+    <style>
+        @media only screen and (max-width: 1199px) and (min-width:768px) {
+            div#formDisclaimer {
+                width: 344px;
+                padding-top: 20px;
+            }
+
+            div#formDisclaimer div {
+                width: 344px;
+                margin: auto;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            div#formDisclaimer {
+                padding-top: 20px;
+            }           
+        }
+
+    </style>
+  	
+</head>
+
+<body>
+  	<!-- Add to Calendar Library -->
+  	<script src="//pages.lumentech.com/rs/926-HYV-740/images/myCalendarObject.js"></script>
+  
+    <div class="container-fluid" style="width: 100%; max-width: 1440px;">
+
+        <!-- Header -->
+
+        <div class="row" style="display: ${headerWithoutContent}">
+            <div class="col-xl mobileHeader">
+                <div class="row headerRow">
+                    <div class="col-xl-3 my-auto mobileHeaderLft mktoText" id="headerLogo1" mktoName="Header Logo" style="padding-left: 0;margin: 0;">
+                        <a href="${logoLink}" _target="blank"><img class="headerLogo" src="https://pages.lumentech.com/rs/926-HYV-740/images/Lumen-Logo-Blue_Black-Cropped.png" alt="Lumentech.com" style="display: block;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      <!-- Header with right content section -->
+
+    <div class="row" style="display: ${headerWithContent}">
+        <div class="col-xl mobileHeader headerFlex">
+            <div class="row headerRow">
+                <div class="col-md-6 col-sm-12 my-auto mobileHeaderLft mktoText" id="headerLogo2" mktoName="Header Logo" style="padding-left: 0;margin: 0;">
+                    <a href="${logoLink}" _target="blank"><img class="headerLogo" src="https://pages.lumentech.com/rs/926-HYV-740/images/Lumen-Logo-Blue_Black-Cropped.png" alt="Lumentech.com" style="display: block;"></a>
+                </div>
+                <div class="col-md-6 col-sm-12 my-auto mktoText text-right headRight align-middle" id="headerRightText" mktoName="Header Text">
+                    <p class="eyebrow">Contact Us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Body 2-Column -->
+
+        <div class="">
+            <div class="col-seventy topMobile" style="display: block;margin: 0;padding: 0;position: relative;">
+                <div class="mktoText deskImg" id="jumboImg" mktoName="Main Body Desktop Image">
+                    <img class="deskImg responsive-img" src="https://via.placeholder.com/950x555.png/8E9399/EEEEEE?text=950px+X+555px+Height+will+auto+adjust" style="display: block;margin: 0;padding: 0;width: 100%;">
+                </div>
+                <img class="mobileImg" src="${mobileHeroImg}" style="display: none;margin: 0;padding: 0;width: 100%;height: auto;min-height: ${mobileHeroImgMinHeight};">
+                <div class="text-overlay" style="position: absolute;">
+                    <div class="mktoText" id="jumboText" mktoName="Main Body Image Text">
+                        <span class="sectionHeadline"><strong>Enim neque volutpat akshec vitae semper lectus nulla.</strong></span>
+                        <br>
+                        <span class="body">Vitae nunc velit dignissim. Lorem sit amet sodales ut eu sem tincidunt. Consectetur ading sit amet. Lorem sit amet, elit consur ading elit.</span>
+                    </div>
+                    <div class="spacer40"></div>
+                    <div class="mktoText" id="eventDetails" mktoName="Subheadline" style="display: ${showEventDetails}">
+                        <div class="body" style="color: #000;padding-bottom: 1vw;"><strong>Day One: Feb 12, 2019</strong></div>
+                        <div class="body" style="color: #000000;padding-bottom: 1vw;"><strong>Day Two: Feb 12, 2019</strong></div>
+                        <div class="body" style="color: #000000;padding-bottom: 1vw;"><strong>Day Three: Feb 12, 2019</strong></div>
+                    </div>                  
+                        <div class="heroCalendar mktoText" id="calendarInfo" mktoName="Add to Calendar Info" style="display: ${addtcShow};">                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-thirty formContainer middleMobile">
+                <div class="row">
+                    <div class="col-lg subhead formHeader mktoText" id="formHeader" mktoName="Form Title"><strong>Register For Event</strong></div>
+                </div>
+              	<div class="row mktoText" id="formHolder" mktoName="Form Holder" style="width: 100%;">
+                    <script src="//app-abb.marketo.com/js/forms2/js/forms2.min.js"></script>
+                    <form id="mktoForm_6782"></form>
+                    <script>
+                    MktoForms2.loadForm("//app-abb.marketo.com", "131-SYO-861", 6782);
+                    </script>
+              </div>
+              <div class="row">
+                    <div class="col-lg mktoText" id="formDisclaimer" mktoName="Form Disclaimer Text" style="margin-top: 20px;">
+                        <div class="footerLegal" style="font-weight: 400;">*2021 Gartner Magic Quadrant for Network
+                            Services, Global</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-seventy bottomMobile" style="background-color: #ffffff;clear: left;">
+            <div class="spacer100"></div>
+
+            <div class="row no-gutters card-deck">
+                <!-- <div class="col-auto no-gutters spacerTablet" style="width:11.76470588235294%;"></div> -->
+                <!-- Box 1 -->
+                <div class="speakerBox col-auto no-gutters">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                           <div class="mktoText speakerBoxImg" id="card1Img" mktoName="Card 1 Image">
+                             <img class="speakerBoxImg responsive-img" src="https://via.placeholder.com/240x125.png/8E9399/EEEEEE">
+                           </div>
+                        </div> 
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="mktoText" id="card1Info" mktoName="Card 1 Info">
+                                <div class="highlights" style="color: #53565A;"><strong>Speaker Name</strong></div>
+                                <div class="descriptionHeadline" style="color: #0C9ED9;"><strong>Nam nec ante. Sed lacinia, urna non ti.</strong></div>
+                                <div class="body" style="color: #000000;">Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box 2 -->
+                <div class="speakerBox col-auto no-gutters">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                          <div class="mktoText speakerBoxImg" id="card2Img" mktoName="Card 2 Image">
+                             <img class="speakerBoxImg responsive-img" src="https://via.placeholder.com/240x125.png/8E9399/EEEEEE">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="mktoText" id="card2Info" mktoName="Card 2 Info">
+                                <div class="highlights" style="color: #53565A;"><strong>Speaker Name</strong></div>
+                                <div class="descriptionHeadline" style="color: #0C9ED9;"><strong>Nam nec ante. Sed lacinia, urna non ti.</strong></div>
+                                <div class="body" style="color: #000000;">Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box 3 -->
+                <div class="speakerBox col-auto no-gutters">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                          <div class="mktoText speakerBoxImg" id="card3Img" mktoName="Card 3 Image">
+                             <img class="speakerBoxImg responsive-img" src="https://via.placeholder.com/240x125.png/8E9399/EEEEEE">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="mktoText" id="card3Info" mktoName="Card 3 Info">
+                                <div class="highlights" style="color: #53565A;"><strong>Speaker Name</strong></div>
+                                <div class="descriptionHeadline" style="color: #0C9ED9;"><strong>Nam nec ante. Sed lacinia, urna non ti.</strong></div>
+                                <div class="body" style="color: #000000;">Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom Disclaimer Notice -->
+              <div class="mktoText" id="disclaimerNotice" mktoName="Disclaimer Notice" style="margin-top:40px; padding-top:5%;">
+                <div class="body" style="color: #000000; font-size:12px; line-height: 16px;text-align: left; width:100%;">*GARTNER and IT SYMPOSIUM/XPO are registered trademarks of Gartner, Inc. and/or its affiliates and is used herein with permission. All rights reserved. While Gartner is hosting the Gartner Conference, Gartner is not in any way affiliated with Exhibiting Company or this promotion, the selection of winners or the distribution of prizes. Gartner disclaims all responsibility for any claims that may arise hereunder.</div>
+             </div>
+            </div>
+            <div class="spacer100"></div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footerRow row" style="clear: both;">
+            <div class="col-xl-3 my-auto mktoText" id="footerLogo" mktoName="Footer Logo" style="">
+              <a href="${logoLink}" _target="blank"><img src="//pages.lumentech.com/rs/926-HYV-740/images/Lumen-Logo-Blue_Black-Cropped.png" alt="Lumentech.com" class="footerLogo" style="display: block;"></a>
+            </div>
+            <div class="col-xl-6 my-auto text-center disclaimerRow" style="">
+                <div class="row">
+                    <div class="col-xl-12 mktoText" id="footerDisclaimer"  mktoName="Footer Disclaimer">
+                        <span class="footerLegal">Services not available everywhere. &copy;<span id="yearDate"></span> Lumen Technologies.  All Rights Reserved.</span>
+                      <span><a class="optanon-toggle-display footerLegal" href="#cookies">Cookie Settings</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 my-auto iconRow">
+                <div class="row iconsMobile">
+                    <div class="col-3 icon mktoText" id="linkedInIcon" mktoName="LinkedIn Icon"><a href="https://www.linkedin.com/company/lumentechnologies"><img class="responsive-img iconImg" src="//pages.lumentech.com/rs/926-HYV-740/images/linkedin-letters.png" alt="https://www.linkedin.com/company/lumen-tech"></a></div>
+                    <div class="col-3 icon mktoText" id="twitterIcon" mktoname="Twitter Icon"><a href="https://www.twitter.com/lumentechco"><img class="responsive-img iconImg" src="//pages.lumentech.com/rs/926-HYV-740/images/twitter-icon-090123.png?version=0" alt="https://www.x.com/lumentechco"></a></div>
+                    <div class="col-3 icon mktoText" id="youtubeIcon" mktoName="Youtube Icon"><a href="https://www.youtube.com/lumentechnologies"><img class="responsive-img iconImg" src="//pages.lumentech.com/rs/926-HYV-740/images/youtube.png" alt="https://www.youtube.com/lumentechnologies"></a></div>
+                    <div class="col-3 icon mktoText" id="facebookIcon" mktoName="Facebook Icon"><a href="https://www.facebook.com/lumentechnologies"><img class="responsive-img iconImg" src="//pages.lumentech.com/rs/926-HYV-740/images/facebook.png" alt="https://www.facebook.com/lumentechnologies"></a></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+  	<!-- JS -->
+    
+    <!-- Add current year to footer -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script type="text/javascript">
+        document.getElementById('yearDate').appendChild(document.createTextNode(moment().format('YYYY')));
+    </script>
+    
+    <!-- REMOVE MARKETO FORM STYLES -->
+    <script type="text/javascript" src="//pages.lumentech.com/rs/926-HYV-740/images/formDestyler.js"></script>
+    
+    <!-- FORM STYLES -->
+    <!-- <link rel="stylesheet" type="text/css" href="./Assets/CSS/singleColumnForm.css"> -->
+    <link rel="stylesheet" type="text/css" href="//pages.lumentech.com/rs/926-HYV-740/images/singleColumnForm.css">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  	<!-- Add to Calendar addevent.com -->
+    <!--<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>-->
+  	
+  
+  	<script>
+       var myCalendar = createCalendar({
+        options: {
+          class: 'my-class',
+          id: 'my-id'                               // You need to pass an ID. If you don't, one will be generated for you.
+        },
+        data: {
+          title: ${eventTitle},     // Event title
+          start: new Date(${eventStart}),   // Event start date
+          end: new Date(${eventEnd}),     // You can also choose to set an end time.
+          address: ${eventLocation},
+          description: ${eventSummary}
+        }
+      });
+
+      document.querySelector('.addToCalendar').appendChild(myCalendar);	
+  	</script>
+  
+  	<!-- Adds class names to each row and col on mkto forms -->
+   	<script src="//pages.lumentech.com/rs/926-HYV-740/images/mkto_form_add_classes.js"></script>
+    
+    <!-- Optional script -->
+    <script>
+    	try {
+          ${optionalScriptBottom}
+        } catch(e) {
+          console.error('Error running optional script', e);
+        }
+    </script>
+
+</body>
+
+</html>
