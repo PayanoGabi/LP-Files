@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="//pages.lumentech.com/rs/926-HYV-740/images/favicon-32.png" />
+    <link rel="icon" href="//pages.lumentech.com/rs/926-HYV-740/images/favicon-32.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://info.centurylinkforbusiness.com/rs/131-SYO-861/images/Wholesale_LP_Fancybox.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//pages.lumentech.com/rs/926-HYV-740/images/main_stylesheet.css">
+    <link rel="stylesheet" href="//pages.lumentech.com/rs/926-HYV-740/images/wholesale.css" />
+      <!-- Font -->
+    <link rel="stylesheet" type="text/css" href="//pages.lumentech.com/rs/926-HYV-740/images/font_classes.css"> 
+    
+    <!-- Marketo Variables -->
+  	<meta class="mktoBoolean" mktoName="Show Header without Content" id="headerWithoutContent" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Show Header with Right Content" id="headerWithContent" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="pageTitle" mktoname="Page Title" default="Lumen Technologies" />
+    <meta class="mktoString" id="logoLink" mktoName="Logo Link" default="#" />
+    <meta class="mktoString" id="overlaySpacer" mktoname="Hero Text Top Spacer" default="140"/>
+    <meta class="mktoString" id="mobileHeroImg" mktoname="Mobile Hero Image" default="https://via.placeholder.com/375x375.png/D0D4D9/EEEEEE"/>
+    <meta class="mktoString" id="mobileHeroImg2" mktoname="Mobile Video Image Hero" default="https://via.placeholder.com/375x375.png/D0D4D9/EEEEEE"/>
+    <meta class="mktoString" id="heroImageVideoLink" mktoname="Hero Video Link" default="https://players.brightcove.net/1186058296001/6LekHGaVY_default/index.html?videoId=6111252285001" />
+    <meta class="mktoString" id="sectionBelowHeroColor" mktoname="Section Below Hero Color" default="#38C6F4" />
+    <meta class="mktoString" id="rightCTABtnLink" mktoname="Right CTA Button URL" default="https://www.youtube.com/embed/LQvleStGQMM" />    
+    <meta class="mktoString" id="rightCTABtnText" mktoname="Right CTA Button Text" default="Read the Infographic" />
+    <meta class="mktoString" id="leftCTABtnVideoLink" mktoname="Left CTA Button(Vid) URL" default="#" />
+    <meta class="mktoString" id="leftCTABtnVideoText" mktoname="Left CTA Button(Vid) Text" default="WATCH THE VIDEO" />
+    <meta class="mktoString" id="leftCTABtnImageLink" mktoname="Left CTA Button(Img) URL" default="#" />
+    <meta class="mktoString" id="leftCTABtnImageText" mktoname="Left CTA Button(Img) Text" default="DOWNLOAD THE INFOGRAPHIC" />
+    <meta class="mktoString" id="leftCTAVideoLink" mktoname="left CTA Video Link" default="https://www.youtube.com/embed/LQvleStGQMM" />
+    <meta class="mktoString" id="lftVideoUrl" mktoname="Two Vid-Left Vid URL" default="#" />
+    <meta class="mktoString" id="rgtVideoUrl" mktoname="Two Vid-Right Vid URL" default="#" />
+    <meta class="mktoString" id="whtPaper1Link" mktoname="White Paper 1 Link" default="#" />
+    <meta class="mktoString" id="whtPaper1Text" mktoname="White Paper One text" default="READ THE WHITEPAPER" />
+    <meta class="mktoString" id="whtPaper2Link" mktoname="White Paper 2 Link" default="#" />
+    <meta class="mktoString" id="whtPaper2Text" mktoname="White Paper 2 text" default="READ THE WHITEPAPER" />
+    <meta class="mktoString" id="whtPaper3Link" mktoname="White Paper 3 Link" default="#" />
+    <meta class="mktoString" id="whtPaper3Text" mktoname="White Paper 3 text" default="READ THE INFOGRAPHIC" />
+    <meta class="mktoString" id="whtPaper4Link" mktoname="White Paper 4 Link" default="#" />
+    <meta class="mktoString" id="whtPaper4Text" mktoname="White Paper 4 text" default="READ THE INFOGRAPHIC" />
+    <meta class="mktoString" id="whtPaper5Link" mktoname="White Paper 5 Link" default="#" />
+    <meta class="mktoString" id="whtPaper5Text" mktoname="White Paper 5 text" default="READ THE INFOGRAPHIC" />
+    <meta class="mktoBoolean" mktoName="Hero Module" id="showRow1" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Hero Video Module" id="showRow1a" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Blue Background Section" id="showRow2" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="White Background Section" id="showRow3" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="BG-Left Image Section" id="showRow4" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSpacer" mktoName="Show Spacer" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show" />
+    <meta class="mktoBoolean" mktoName="Left CTA Section - Video Option" id="showRow5a" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Left CTA Section - Image Option" id="showRow5b" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Two Video Section" id="showRow6" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Download 1" id="showRow8" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Download 2" id="showRow9" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Download 3" id="showRow10" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Download 4" id="showRow11" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" mktoName="Download 5" id="showRow12" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="launchLink" mktoname="Adobe Launch Link" default="//assets.adobedtm.com/c58e7dfcc1ae/f4f11ace7481/launch-ab5692cd5e33.min.js"/>
+    <meta class="mktoString" id="fancyBoxScript" mktoname="Video Enabling script (send to Robbie)" default="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" />
+  	<meta class="mktoString" id="optionalScriptBottom" mktoname="Optional Script Bottom" default=""/>
+
+    <title>${pageTitle}</title>
+
+    <!-- JS -->
+    <!-- Adobe Launch script -->
+    <script src="${launchLink}" async></script>
+
+  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+
+    <!-- script to add web font -->
+    <script type="text/javascript">
+    	const proxyurl = "//pages.lumentech.com/";
+			const url = "//pages.lumentech.com/"; // site that doesn’t send Access-Control-*
+			fetch(proxyurl + url) // //cors-anywhere.herokuapp.com///example.com
+			.then(response => response.text())
+			.then(contents => console.log(contents))
+			.catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid main" style="width: 100%; max-width: 1440px;">
+        
+        <!-- Header -->
+
+        <div class="row" style="display: ${headerWithoutContent}">
+            <div class="col-xl mobileHeader">
+            <div class="row headerRow">
+                <div class="col-xl-3 my-auto mobileHeaderLft mktoText" id="headerLogo1" mktoName="Header Logo" style=";padding-left: 0;margin: 0;">
+                  <a href="${logoLink}" _target="blank"><img class="headerLogo" src="https://pages.lumentech.com/rs/926-HYV-740/images/Lumen-Logo-Blue_Black-Cropped.png" alt="Lumentech.com" style="display: block;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Header with right content section -->
+
+    <div class="row" style="display: ${headerWithContent}">
+        <div class="col-xl mobileHeader headerFlex">
+            <div class="row headerRow">
+                <div class="col-md-6 col-sm-12 my-auto mobileHeaderLft mktoText" id="headerLogo2" mktoName="Header Logo" style="padding-left: 0;margin: 0;">
+                    <a href="${logoLink}" _target="blank"><img class="headerLogo" src="https://pages.lumentech.com/rs/926-HYV-740/images/Lumen-Logo-Blue_Black-Cropped.png" alt="Lumentech.com" style="display: block;"></a>
+                </div>
+                <div class="col-md-6 col-sm-12 my-auto text-right mktoText headRight align-middle" id="headerRightText" mktoName="Header Text">
+                    <p class="eyebrow">Contact Us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Body Image Main -->
+
+        <div class="row align-items-center" style="display:${showRow1}">
+            <div class="col-lg" style="display: block;margin: 0;padding: 0;position: relative;">
+                <div class="mktoText deskImg" id="deskImg" mktoName="Main Body Desktop Image" >
+                    <img class="deskImg responsive-img" src="https://via.placeholder.com/1920x500.png/D0D4D9/EEEEEE" style="display: block;margin: 0;padding: 0;width: 100%;">
+                </div>
+                <img class="mobileImg" src="${mobileHeroImg}" style="display: none;margin: 0;padding: 0;width: 100%;"> 
+                <div class="text-overlay" style="position: absolute;top: ${overlaySpacer}px;">
+                    <div class="mktoText" id="jumboText" mktoName="Main Body Image Text">                         
+                        <span class="heroHeadline" style="font-weight: bold;color: #000;">Enim neque volutpat akshec vitae semper lectus nulla.</span>
+                      <br>
+                      <br>
+                      <span class="subhead" id="imageSubText" style="color: #000000;">Vitae nunc velit dignissim sodales ut eu sem tincidunt.</span>
+                  </div>
+                    
+                </div>  
+            </div>
+        </div>
+        <div class="row" style="display:${showRow1a};">
+            <div class="col-lg" style="display: block;margin: 0;padding: 0;position: relative;">
+                <a data-fancybox href="${heroImageVideoLink}"data-type="iframe" data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "100%"}}}'>
+                    <img class="mktoImg deskImg" id="heroVideoStillImage" mktoName="Hero Still Image" src="https://pages.lumentech.com/rs/926-HYV-740/images/video_placeholder.png" style="width: 100%;">
+                    <img class="mobileImg" src="${mobileHeroImg2}" style="display: none;margin: 0;padding: 0;width: 100%;">
+                </a>
+                <div class="text-overlay" style="position: absolute;top: ${overlaySpacer}px;">
+                    <div class="mktoText" id="jumboText2" mktoName="Hero Video Image Text">
+                        <span class="heroHeadline" style="font-weight: bold;color: #000;">Enim neque volutpat akshec vitae semper lectus nulla.</span>
+                      <br>
+                      <br>
+                      <span class="subhead" id="imageSubText2" style="color: #000000;">Vitae nunc velit dignissim sodales ut eu sem tincidunt.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blue Full Width Section -->
+
+        <div class="row blueFullWidthSection" style="display:${showRow2}; background-color:${sectionBelowHeroColor};">
+            <div class="col-lg">
+                <div class="row inner">
+                    <div class="col-lg moduleBlade">
+                        <div class="mktoText blackBoxText" id="textBox1" mktoName="Content Blue Background">
+                            <span class="body" style="color: #000000;">Lorum Ipsum 168% in digitalis negotiis sunt magis uerisimile innovate citius. Socium nominis laborat eripere cum CenturyLink connectus, et auxiliatus sum tibi, quod solutions tuo negotio iam transform. Neque enim akshec vitae semper volutpat lectus.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copy White BG -->
+
+        <div class="row white" style="display:${showRow3};background-color: #ffffff;">
+            <div class="col-lg">
+                <div class="row inner">
+                    <div class="col-lg moduleBlade">
+                        <div class="mktoText" id="textBox2" mktoName="Content White Background">
+                            <span class="subsectionheadline" style="color: #000000;line-height: 120%;"><strong>Where Digital Business Goes to Network</strong></span>
+                            <br>
+                            <span class="body" style="color: #000000;font-weight: 400;line-height: 120%;">Lorum Ipsum 168% in digitalis negotiis sunt magis uerisimile innovate citius. Socium nominis laborat eripere cum CenturyLink connectus, securitatem nubes, et auxiliatus sum tibi, quod solutions tuo negotio iam transform. Neque enim akshec vitae semper volutpat lectus.</span>
+                            <br>
+                            <br>
+                            <ul class="body" style="color: #000000;font-weight: 400;line-height: 120%;">
+                                <li>Symmetrical upload and download speeds help boost customer experiences.</li>
+                                <li>High bandwidth allows for real-time data backup.</li>
+                                <li>Easy-to-manage, scalable bandwidth helps you deliver cloud applications.</li>
+                                <li>Essential business software helps maintain employee productivity.</li>
+                            </ul>
+                            <span class="body" style="color: #000000;font-weight: 400;line-height: 120%;">Get started by requesting <a href="#" data-toggle="modal" data-target="#conactUsForm">a free consultation with an expert today.</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BG left Image right CTA -->
+
+        <div class="row" style="display:${showRow4};background-color: #FFFFFF;">
+            <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="mktoText" id="leftWhtPaper" mktoName="Left Image BG">
+                    <img src="https://via.placeholder.com/960x540.png/D0D4D9/EEEEEE">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-xs-12 add-padding-topbtm-mobile" style="background-color:#FFFFFF; padding-bottom: 30px;">
+                <div class="row leftColText" style="padding: 30px 100px 20px 50px;">
+                    <div class="col-lg-12 col-md-12 col-xs-12 boxText">
+                        <div class="mktoText" id="rightText" mktoName="Right Text BG">
+                            <span class="subsectionheadline" style="font-weight: 600;line-height: 135%; color:#0C9ED9">Cable vs. Fiber:</span><br>
+                            <span class="subsectionheadline" style="font-weight: 600;line-height: 135%;">What's Best for Your Business?</span><br>
+                            <span class="body">Explore the differences between cable and fiber internet and learn which service is right for your company.</span>
+                            <div style="height: 20px;">&nbsp;</div>
+                            <a class="primaryCTA" href="#">CLICK HERE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="display:${showSpacer};background-color: #FFFFFF;">
+            <div class="spacerFull"></div>
+        </div>
+
+        <!-- BG Left CTA Right Video (Option 1)  -->
+
+        <div class="row" style="display:${showRow5a};background-color: #EEEEEE; padding: 0px 0px;">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row buttonBox" style="padding: 50px 20px 20px 100px">
+                    <div class="col-lg-12">
+                        <div class="mktoText" id="lftHeadline-a" mktoName="Left CTA Headline">
+                            <span class="subsectionheadline" style="color: #000000; font-weight: bold;">
+                                Video: Digital + Business
+                            </span><br>
+                            <span class="body" style="color: #000000;font-weight: 400;line-height: 135%;">
+                                See how Digital Business Solutions drive more innovation - faster.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row buttonBox" style="padding-left: 100px;">
+                    <div class="col-lg-12">
+                        <a data-fancybox class="secondaryCTA text-center align-middle" href="${leftCTABtnVideoLink}" data-type="iframe" data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "100%"}}}'>${leftCTABtnVideoText}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 videoBox">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <a data-fancybox href="${leftCTABtnVideoLink}" data-type="iframe" data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "100%"}}}'>
+                            <div class="mktoText" id="rightVideoOption" mktoName="Right Video Option">
+                                <img src="https://beamimagination.com/wp-content/uploads/2017/09/video-placeholder.png" >
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BG Left CTA Right Image (Option 2) -->
+        <div class="row" style="display:${showRow5b};background-color: #EEEEEE; padding: 0px 0px;">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row buttonBox" style="padding: 50px 20px 20px 100px">
+                    <div class="col-lg-12">
+                        <div class="mktoText" id="lftHeadline-b" mktoName="Left CTA Headline">
+                            <span class="subsectionheadline" style="color: #000000; font-weight: bold;">
+                                Video: Digital + Business
+                            </span><br>
+                            <span class="body" style="color: #000000;font-weight: 400;line-height: 135%;">
+                                See how Digital Business Solutions drive more innovation - faster.
+                            </span>
+                            <div style="height: 20px;">&nbsp;</div>
+                            <a class="secondaryCTA" href="#">DOWNLOAD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 videoBox">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                      <div class="mktoText" mktoName="Right Image Option" id="rightImageOption" >
+                        <img src="https://via.placeholder.com/960x540.png/D0D4D9/EEEEEE">
+                      </div>
+                    	
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Two Vid  -->
+        <div class="row" style="display:${showRow6};background-color: #FFFFFF;padding: 5% 0;">
+            <div class="col-lg">
+                <div class="row inner">
+                    <div class="col-lg-12">
+                        <div class="row" style="padding-bottom: 25px;">
+                            <div class="col-12 twoVideoBox">
+                                <div class="mktoText" id="twoVidHeadline" mktoName="2 Video Headlines">
+                                    <span class="subsectionheadline" style="color: #000000;font-weight: 600;line-height: 135%;">Video: See why Customers Love 1 Gig Fiber + Internet</span><br>
+                                    <span class="body" style="color: #000000;font-weight: 400;line-height: 135%;">Watch these video testimonials and 30-second overview of Fiber + Benefits</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row videoFlex">
+                            <div class="videoBox" style="max-width: 400px;">
+                                <a href="${lftVideoUrl}" data-fancybox>
+                                  <div class="mktoText" id="lftVideo" mktoName="Two Vid-Left Video" >
+                                     <img src="https://beamimagination.com/wp-content/uploads/2017/09/video-placeholder.png" style="max-width: 400px;" >
+                                  </div>
+                                </a>
+                            </div>
+                            <div class="videoBox" style="max-width: 400px;">
+                                <a href="${rgtVideoUrl}" data-fancybox>
+                                  <div class="mktoText" id="rgtVideo" mktoName="Two Vid-Right Video" >
+                                    <img src="https://beamimagination.com/wp-content/uploads/2017/09/video-placeholder.png" style="max-width: 400px;" >
+                                  </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Left Image Right CTA -->
+
+        <div class="row bottomBlurb" style="display:${showRow8};">
+            <div class="col-lg">
+                <div class="row inner">
+                    <div class="col-lg-3 col-md-5 col-sm-12 pic_box" adm-action="READ THE WHITEPAPER | READ THE WHITEPAPER">
+                        <a href="${whtPaper1Link}" target="_blank">
+                            <div class="mktoText whtPaperImg" id="whtPaper1Img" mktoName="White Paper 1 Image">
+                                <img src="https://via.placeholder.com/320x320.png/D0D4D9/EEEEEE" alt="White Paper">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-md-7 col-sm-12 pic_details">
+                        <div class="row">
+                            <div class="col-lg-1 col-md-1 filler">&nbsp;</div>
+                            <div class="col-lg-11 col-md-11">
+                                <div class="mktoText" id="whtPaper1" mktoName="White Paper 1 Copy">
+                                    <span class="subhead" style="font-weight: 700;line-height: 130%;">Whitepaper: Transformational Directions for the Digital Business</span>
+                                    <p class="body" style="font-weight: 400;line-height: 130%;">Learn how digital leaders are reducing costs, innovating faster and are striving for greater IT agility. </p>
+                                    <a class="tertiaryCTA" href="#" target="_blank">DOWNLOAD THE INFOGRAPHIC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Left Image Right CTA -->
+
+        <div class="row bottomBlurb" style="display:${showRow9};">
+            <div class="col-lg">
+                <div class="row inner">
+                    <div class="col-lg-3 col-md-5 col-sm-12 pic_box" adm-action="READ THE WHITEPAPER | READ THE WHITEPAPER">
+                        <a href="${whtPaper2Link}" target="_blank">
+                            <div class="mktoText whtPaperImg" id="whtPaper2Img" mktoName="White Paper 2 Image">
+                                <img src="https://via.placeholder.com/320x320.png/D0D4D9/EEEEEE" alt="White Paper">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-md-7 col-sm-12 pic_details">
+                        <div class="row">
+                            <div class="col-lg-1 filler">&nbsp;</div>
+                            <div class="col-lg-11 col-md-12">
+                                <div class="mktoText" id="whtPaper2" mktoName="White Paper 2 Copy">
+                                    <span class="subhead" style="font-weight: 700;line-height: 130%;">Whitepaper: Modernizing the WAN to Drive Digital Business</span>
+                                    <p class="body" style="font-weight: 400;line-height: 130%;">Understand the objectives and challenges of establishing a dynamic, hybrid network to support digital business initiatives.</p>
+                                    <a class="tertiaryCTA" href="#" target="_blank">DOWNLOAD THE INFOGRAPHIC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Left Image Right CTA -->
+
+        <div class="row bottomBlurb" style="display:${showRow10};">
+            <div class="col-lg">
+                <div class="row inner">
+                    <div class="col-lg-3 col-md-5 col-sm-12 pic_box" adm-action="READ THE WHITEPAPER | READ THE WHITEPAPER">
+                        <a href="${whtPaper3Link}" target="_blank">
+                            <div class="mktoText whtPaperImg" id="whtPaper3Img" mktoName="White Paper 3 Image">
+                                <img src="https://via.placeholder.com/320x320.png/D0D4D9/EEEEEE" alt="White Paper">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-md-7 col-sm-12 pic_details">
+                        <div class="row">
+                            <div class="col-lg-1 filler">&nbsp;</div>
+                            <div class="col-lg-11 col-md-12">
+                                <div class="mktoText" id="whtPaper3" mktoName="White Paper 3 Copy">
+                                    <span class="subhead" style="font-weight: 700;line-height: 130%;">Infographic: See How Digital Leaders Achieve True Business Transformation</span>
+                                    <p class="body" style="font-weight: 400;line-height: 130%;">See how using a transformation strategy can boost innovation.</p>
+                                    <a class="tertiaryCTA" href="#" target="_blank">DOWNLOAD THE INFOGRAPHIC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Left Image Right CTA -->
+
+        <div class="row bottomBlurb" style="display:${showRow11};">
+            <div class="col-lg">
+                <div class="row inner">
+                    <div class="col-lg-3 col-md-5 col-sm-12 pic_box" adm-action="READ THE WHITEPAPER | READ THE WHITEPAPER">
+                        <a href="${whtPaper4Link}" target="_blank">
+                          <div class="mktoText whtPaperImg" id="whtPaper4Img" mktoName="White Paper 4 Image">
+                            <img src="https://via.placeholder.com/320x320.png/D0D4D9/EEEEEE" alt="White Paper">
+                          </div>
+                      </a>
+                          </div>
+                    <div class="col-lg-9 col-md-7 col-sm-12 pic_details">
+                        <div class="row">
+                            <div class="col-lg-1 filler">&nbsp;</div>
+                            <div class="col-lg-11 col-md-12">
+                                <div class="mktoText" id="whtPaper4" mktoName="White Paper 4 Copy">
+                                    <span class="subhead" style="font-weight: 700;line-height: 130%;">In rhoncus urna lacus, non lobortis nulla rutrum eget.</span>
+                                    <p class="body" style="font-weight: 400;line-height: 130%;">Suspendisse consequat turpis lectus, eu aliquet diam pretium quis. Vivamus orci lectus, sollicitudin et dolor vel, sodales suscipit ipsum. Phasellus erat lorem, dictum aliquet metus nec, laoreet efficitur lectus. Sed at velit ex.</p>
+                                    <a class="tertiaryCTA" href="#" target="_blank">DOWNLOAD THE INFOGRAPHIC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left Image Right CTA -->
+
+        <div class="row bottomBlurb" style="display:${showRow12};">
+            <div class="col-lg">
+                <div class="row inner">
+                    <div class="col-lg-3 col-md-5 col-sm-12 pic_box" adm-action="READ THE WHITEPAPER | READ THE WHITEPAPER">
+                        <a href="${whtPaper5Link}" target="_blank">
+                            <div class="mktoText whtPaperImg" id="whtPaper5Img" mktoName="White Paper 5 Image">
+                                <img src="https://via.placeholder.com/320x320.png/D0D4D9/EEEEEE" alt="White Paper">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-md-7 col-sm-12 pic_details">
+                        <div class="row">
+                            <div class="col-lg-1 col-md-1 filler">&nbsp;</div>
+                            <div class="col-lg-11 col-md-11">
+                                <div class="mktoText" id="whtPaper5" mktoName="White Paper 5 Copy">
+                                    <span class="subhead" style="font-weight: 700;line-height: 130%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus, arcu quis porttitor molestie.</span>
+                                    <p class="body" style="font-weight: 400;line-height: 130%;">Integer aliquam a elit condimentum sollicitudin. Proin posuere eleifend finibus.</p>
+                                    <a class="tertiaryCTA" href="#" target="_blank">DOWNLOAD THE INFOGRAPHIC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+       <!-- Bottom Disclaimer Notice -->
+        <div class="mktoText" id="disclaimerNotice" mktoName="Disclaimer Notice" style="padding:5%; background:#EEEEEE;">
+          <div class="body" style="color: #000000; font-size:12px; line-height: 16px;text-align: left; width:100%;">*Tortor ornare vitae eget dictumst tempus justo, ultricies praesent congue torquent porta imperdiet eros, porttitor dis litora integer netus. Cras iaculis dignissim morbi id conubia senectus pulvinar euismod netus cum et, interdum eleifend phasellus risus erat ornare suspendisse.
+          </div>
+       </div>
+
+        <!-- Blue line divider between same colored sections and footer -->
+
+        <div class="row blueLine"></div>
+
+        <!-- Footer -->
+
+        <div class="row">
+            <div class="col-xl mobileFooter">
+                <div class="row footerRow">
+                    <div class="col-xl-3 my-auto mktoText" id="footerLogo" mktoName="Footer Logo">
+                      <a href="${logoLink}" _target="blank"><img src="//pages.lumentech.com/rs/926-HYV-740/images/Lumen-Logo-Blue_Black-Cropped.png" alt="Lumentech.com" class="footerLogo" style="display: block;"></a>
+                    </div>
+                    <div class="col-xl-6 my-auto text-center disclaimerRow">
+                        <div class="row">
+                            <div class="col-xl-12 mktoText" id="footerDisclaimer"  mktoName="Footer Disclaimer">
+                                <span class="goth12">Services not available everywhere. &copy;<span id="yearDate"></span> Lumen Technologies.  All Rights Reserved.</span>
+                              	<span><a class="optanon-toggle-display" href="#cookies">Cookie Settings</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 my-auto iconRow">
+                        <div class="row iconsMobile">
+                            <div class="col-3 icon mktoText" id="linkedInIcon" mktoName="LinkedIn Icon"><a href="https://www.linkedin.com/company/lumentechnologies"><img class="responsive-img iconImg" src="//pages.lumentech.com/rs/926-HYV-740/images/linkedin-letters.png" alt="https://www.linkedin.com/company/lumen-tech"></a></div>
+                    		<div class="col-3 icon mktoText" id="twitterIcon" mktoname="Twitter Icon"><a href="https://www.twitter.com/lumentechco"><img class="responsive-img iconImg" src="//pages.lumentech.com/rs/926-HYV-740/images/twitter-icon-090123.png?version=0" alt="https://www.x.com/lumentechco"></a></div>
+                			<div class="col-3 icon mktoText" id="youtubeIcon" mktoName="Youtube Icon"><a href="https://www.youtube.com/lumentechnologies"><img class="responsive-img iconImg" src="//pages.lumentech.com/rs/926-HYV-740/images/youtube.png" alt="https://www.youtube.com/lumentechnologies"></a></div>
+                			<div class="col-3 icon mktoText" id="facebookIcon" mktoName="Facebook Icon"><a href="https://www.facebook.com/lumentechnologies"><img class="responsive-img iconImg" src="//pages.lumentech.com/rs/926-HYV-740/images/facebook.png" alt="https://www.facebook.com/lumentechnologies"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- JS to load the page faster -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f8f3ffeede.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+    <script src="${fancyBoxScript}"></script>
+    
+    <script type="text/javascript">
+   	document.getElementById('yearDate').appendChild(document.createTextNode(moment().format('YYYY')));
+    $('#mintBoxModal').modal(options);
+
+    $('#videoModal').on('hidden.bs.modal', function () {
+    player.stopVideo();
+   // or jQuery
+   	$('#mintBoxModal').get(0).stopVideo();
+   // or remove video url
+   	$('mintBoxModal').attr('src', '');
+		});
+    </script>
+  
+  	<!-- Adds class names to each row and col on mkto forms -->
+   	<script src="//pages.lumentech.com/rs/926-HYV-740/images/mkto_form_add_classes.js"></script>
+    
+    <!-- Optional script -->
+    <script>
+    	try {
+          ${optionalScriptBottom}
+        } catch(e) {
+          console.error('Error running optional script', e);
+        }
+    </script>
+</body>
+
+</html>
